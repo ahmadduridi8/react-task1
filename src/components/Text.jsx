@@ -1,17 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState ,  useEffect} from 'react';
 import '../App.css';
 
 export default function App() {
   const [task, setTask] = useState('');
   const [tasks, setTasks] = useState([]);
   const [filter, setFilter] = useState('all');
+ 
+  useEffect(() => {
+    const storedTasks = JSON.parse(localStorage.getItem('tasks'));
+    if (storedTasks) {
+      setTasks(storedTasks);
+    }
+  }, []);
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }, [tasks]);
 
-  const addTask = () => {
+
+
+  function addTask() {
     if (task.trim() !== '') {
       setTasks([...tasks, { id: Date.now(), text: task, completed: false }]);
       setTask('');
     }
-  };
+  }
 
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
