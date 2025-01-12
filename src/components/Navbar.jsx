@@ -24,12 +24,12 @@ export default function Navbar() {
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
     }}
     onMouseEnter={e => {
-      e.target.style.backgroundColor = '#66ff66';  // اللون الأخضر الأغمق عند التمرير
-      e.target.style.transform = 'scale(1.05)';  // تأثير التحجيم عند التمرير
+      e.target.style.backgroundColor = '#66ff66';  
+      e.target.style.transform = 'scale(1.05)'; 
     }}
     onMouseLeave={e => {
-      e.target.style.backgroundColor = '#f7f9fc';  // العودة للون الأصلي
-      e.target.style.transform = 'scale(1)';  // العودة للحجم الأصلي
+      e.target.style.backgroundColor = '#f7f9fc';  
+      e.target.style.transform = 'scale(1)';  
     }}>Home</Link>
             </li>
             <li className="nav-item ">
@@ -41,12 +41,12 @@ export default function Navbar() {
       transition: 'background-color 0.3s ease, transform 0.3s ease',
     }}
     onMouseEnter={e => {
-      e.target.style.backgroundColor = ' #66ff66';  // اللون الأخضر الأغمق عند التمرير
-      e.target.style.transform = 'scale(1.05)';  // تأثير التحجيم عند التمرير
+      e.target.style.backgroundColor = ' #66ff66';  
+      e.target.style.transform = 'scale(1.05)';  
     }}
     onMouseLeave={e => {
-      e.target.style.backgroundColor = '  #6c757d';  // العودة للون الأصلي
-      e.target.style.transform = 'scale(1)';  // العودة للحجم الأصلي
+      e.target.style.backgroundColor = '  #6c757d';   
+      e.target.style.transform = 'scale(1)'; 
     }}>Task Cards</Link>
             </li>
 
