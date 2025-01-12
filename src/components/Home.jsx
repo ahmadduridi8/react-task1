@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../images/home.jpg';
+import image from '../images/home1.jpg';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -14,16 +14,24 @@ export default function Home() {
       }}
     >
       <div className="row align-items-center">
+        <div className="col-md-6 d-flex flex-column justify-content-between" style={{ height: '100%' }}>
+         
+          <div>
+            <h1 
+              className="display-4 text-dark mb-4"
+              style={{ fontWeight: 'bold', color: '#343a40', textAlign:'center' ,fontStyle: 'oblique' ,fontFamily: "'Playwrite AU SA', sans-serif"}} 
+            >
+              <h1 style={{ fontSize: '3rem', marginBottom: '10px'}}>
+                Welcome To
+              </h1>
+              <h2 style={{ fontSize: '2rem', marginTop: '0'}}>
+                Task After Task
+              </h2>
+            </h1>
+          </div>
 
-        <div className="col-md-6">
-          <h1 
-            className="display-4 text-dark mb-4"
-            style={{ fontWeight: 'bold', color: '#343a40' }} 
-          >
-            Welcome to the Home Page
-          </h1>
-          <div className="d-flex justify-content-start gap-3 mt-3">
-
+          
+          <div className="d-flex justify-content-center gap-3 mt-5">
             <Link to="/Text">
               <button 
                 className="btn btn-lg w-100"
@@ -34,7 +42,7 @@ export default function Home() {
                 onMouseEnter={e => e.target.style.transform = 'scale(1.05)'}
                 onMouseLeave={e => e.target.style.transform = 'scale(1)'}
               >
-                Go to Add Tasks
+                Add Tasks
               </button>
             </Link>
 
@@ -48,7 +56,7 @@ export default function Home() {
                 onMouseEnter={e => e.target.style.transform = 'scale(1.05)'}
                 onMouseLeave={e => e.target.style.transform = 'scale(1)'}
               >
-                Go to Task Cards
+                 Task Cards
               </button>
             </Link>
           </div>
@@ -61,14 +69,13 @@ export default function Home() {
             className="img-fluid rounded shadow-lg w-100"
             style={{ 
               objectFit: 'cover', 
-              borderRadius: '10px',
+              borderRadius: '100px',
               transition: 'transform 0.3s ease', 
             }}
             onMouseEnter={e => e.target.style.transform = 'scale(1.05)'}
             onMouseLeave={e => e.target.style.transform = 'scale(1)'}
           />
         </div>
-
       </div>
     </div>
   );

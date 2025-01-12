@@ -30,17 +30,17 @@ export default function TaskOverview() {
             <div 
               className="card shadow-lg p-3 rounded"
               style={{
-                backgroundColor: '#f8f9fa', 
+                backgroundColor: 'rgb(230, 244, 188)', 
                 transition: 'transform 0.3s ease, box-shadow 0.3s ease',
                 color: '#343a40',  
                 fontSize: '18px', 
               }}
             >
               <div className="card-body">
-                <h4 className="card-title text-primary" style={{ fontSize: '22px', fontWeight: 'bold' }}>
+                <h4 className="card-title text-muted" style={{ fontSize: '22px', fontWeight: 'bold' }}>
                   All Tasks
                 </h4>
-                <p className="card-text text-muted">Total: {allTasks.length}</p>
+                <p className="card-text text-muted"style={{ fontSize: '17px', fontWeight: 'bold' }}>Total: {allTasks.length}</p>
                 <ul className="list-unstyled">
                   {allTasks.map(task => (
                     <li key={task.id} className="my-2">{task.text}</li>
@@ -64,7 +64,7 @@ export default function TaskOverview() {
                 <h4 className="card-title text-success" style={{ fontSize: '22px', fontWeight: 'bold' }}>
                   Completed Tasks
                 </h4>
-                <p className="card-text text-muted">Total: {completedTasks.length}</p>
+                <p className="card-text text-muted"style={{ fontSize: '17px', fontWeight: 'bold' }}>Total: {completedTasks.length}</p>
                 <ul className="list-unstyled">
                   {completedTasks.map(task => (
                     <li key={task.id} className="my-2">{task.text}</li>
@@ -88,7 +88,7 @@ export default function TaskOverview() {
                 <h4 className="card-title text-danger" style={{ fontSize: '22px', fontWeight: 'bold' }}>
                   Active Tasks
                 </h4>
-                <p className="card-text text-muted">Total: {activeTasks.length}</p>
+                <p className="card-text text-muted"style={{ fontSize: '17px', fontWeight: 'bold' }}>Total: {activeTasks.length}</p>
                 <ul className="list-unstyled">
                   {activeTasks.map(task => (
                     <li key={task.id} className="my-2">{task.text}</li>

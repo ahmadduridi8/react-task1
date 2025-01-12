@@ -64,7 +64,7 @@ export default function App() {
         justifyContent: 'center',
       }}
     >
-      <h1 style={{ textAlign: 'center', color: '#007bff', marginBottom: '20px' }}>To-Do List</h1>
+      <h1 style={{ textAlign: 'center', color: 'rgb(91, 102, 68)', marginBottom: '20px' }}>To-Do List</h1>
       
       <div className="task-input" style={{ display: 'flex', marginBottom: '20px' }}>
         <input
@@ -86,7 +86,7 @@ export default function App() {
           onClick={addTask}
           style={{
             padding: '10px 20px',
-            backgroundColor: '#007bff',
+            backgroundColor: 'rgb(44, 181, 128)',
             color: '#fff',
             border: 'none',
             borderRadius: '5px',
@@ -155,7 +155,7 @@ export default function App() {
           style={{
             padding: '10px 15px',
             margin: '0 5px',
-            backgroundColor: filter === 'all' ? '#007bff' : '#e9ecef',
+            backgroundColor: filter === 'all' ? 'rgb(44, 181, 128)' : '#e9ecef',
             color: filter === 'all' ? '#fff' : '#333',
             border: 'none',
             borderRadius: '5px',
@@ -169,7 +169,7 @@ export default function App() {
           style={{
             padding: '10px 15px',
             margin: '0 5px',
-            backgroundColor: filter === 'active' ? '#007bff' : '#e9ecef',
+            backgroundColor: filter === 'active' ? 'rgba(232, 170, 170, 0.82)' : '#e9ecef',
             color: filter === 'active' ? '#fff' : '#333',
             border: 'none',
             borderRadius: '5px',
@@ -183,7 +183,7 @@ export default function App() {
           style={{
             padding: '10px 15px',
             margin: '0 5px',
-            backgroundColor: filter === 'completed' ? '#007bff' : '#e9ecef',
+            backgroundColor: filter === 'completed' ? 'rgba(127, 184, 162, 0.66)' : '#e9ecef',
             color: filter === 'completed' ? '#fff' : '#333',
             border: 'none',
             borderRadius: '5px',
